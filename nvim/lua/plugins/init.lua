@@ -57,6 +57,7 @@ local modules = {
     "vim-tmux-navigator",
     "which-key",
     "xbase",
+    "vim-colors-xcode",
     "xcodebuild",
     "zen-mode",
 }

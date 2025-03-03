@@ -4,7 +4,7 @@ local color_scheme = require("color_scheme")
 
 -- Function to generate a unique session ID
 local function generate_session_id()
-  return tostring(os.time()) .. tostring(math.random(100000, 999999))
+    return tostring(os.time()) .. tostring(math.random(100000, 999999))
 end
 
 -- Generate and set WEZTERM_SESSION
@@ -99,60 +99,56 @@ local session_id = generate_session_id()
 -- end)
 
 return {
-  set_environment_variables = {
-    WEZTERM_SESSION = session_id,
-  },
-  initial_cols = 112,
-  initial_rows = 34,
-  enable_tab_bar = false,
-  font = wezterm.font_with_fallback({
-    { family = "Hack Nerd Font", weight = "Regular" },
-    { family = "SauceCodePro Nerd Font", weight = "DemiBold" },
-    "Hack Nerd Font",
-    "SauceCodePro Nerd Font",
-    "Hack",
-    "SauceCodePro",
-  }),
-  font_size = 16,
-  window_padding = { left = 4, right = 4, top = 4, bottom = 0 },
-  use_fancy_tab_bar = true,
-  colors = color_scheme.kanagawa,
-  scrollback_lines = 5000,
-  enable_scroll_bar = true,
-  min_scroll_bar_height = "2cell",
-  background = {
-    {
-      source = { File = wezterm.config_dir .. "/dark_tile.png" },
-      repeat_x = "Repeat",
-      repeat_y = "Repeat",
-      opacity = 0.50,
-      hsb = { brightness = 0.92, hue = 1.000, saturation = 1.000 },
+    set_environment_variables = {
+        WEZTERM_SESSION = session_id,
     },
-    {
-      source = { File = wezterm.config_dir .. "/background.png" },
-      width = "58cell",
-      height = "29cell",
-      vertical_offset = "-1cell",
-      repeat_x = "Repeat",
-      repeat_y = "Repeat",
-      opacity = 0.75,
-      hsb = { brightness = 0.020, hue = 1.00, saturation = 0.33 },
+    initial_cols = 85,
+    initial_rows = 25,
+    enable_tab_bar = false,
+    font = wezterm.font_with_fallback({
+        { family = "Hack Nerd Font",         weight = "Regular" },
+        { family = "SauceCodePro Nerd Font", weight = "DemiBold" },
+        "Hack Nerd Font",
+        "SauceCodePro Nerd Font",
+        "Hack",
+        "SauceCodePro",
+    }),
+    font_size = 16,
+    window_padding = { left = 4, right = 4, top = 4, bottom = 0 },
+    use_fancy_tab_bar = true,
+    colors = color_scheme.kanagawa,
+    scrollback_lines = 5000,
+    enable_scroll_bar = true,
+    min_scroll_bar_height = "2cell",
+    background = {
+        {
+            source = { File = wezterm.config_dir .. "/dark_tile.png" },
+            repeat_x = "Repeat",
+            repeat_y = "Repeat",
+            opacity = 0.50,
+            hsb = { brightness = 0.92, hue = 1.000, saturation = 1.000 },
+        },
+        {
+            source = { File = wezterm.config_dir .. "/background2.png" },
+            vertical_offset = "-1cell",
+            opacity = 0.75,
+            hsb = { brightness = 0.020, hue = 1.00, saturation = 0.33 },
+        },
+        {
+            source = { File = wezterm.config_dir .. "/purple_tile.png" },
+            repeat_x = "Repeat",
+            repeat_y = "Repeat",
+            opacity = 0.38,
+            hsb = { brightness = 0.25, hue = 1.000, saturation = 1.000 },
+        },
+        {
+            source = { File = wezterm.config_dir .. "/dark_tile.png" },
+            repeat_x = "Repeat",
+            repeat_y = "Repeat",
+            opacity = 0.25,
+            hsb = { brightness = 0.92, hue = 1.000, saturation = 1.000 },
+        },
     },
-    {
-      source = { File = wezterm.config_dir .. "/purple_tile.png" },
-      repeat_x = "Repeat",
-      repeat_y = "Repeat",
-      opacity = 0.38,
-      hsb = { brightness = 0.25, hue = 1.000, saturation = 1.000 },
-    },
-    {
-      source = { File = wezterm.config_dir .. "/dark_tile.png" },
-      repeat_x = "Repeat",
-      repeat_y = "Repeat",
-      opacity = 0.25,
-      hsb = { brightness = 0.92, hue = 1.000, saturation = 1.000 },
-    },
-  },
-  key_tables = key_bindings.key_tables,
-  keys = key_bindings.keys,
+    key_tables = key_bindings.key_tables,
+    keys = key_bindings.keys,
 }

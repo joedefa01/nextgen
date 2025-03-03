@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/josephbharrison/oni/main/images/logo-small.png"/>
 </p>
 
-# Oni
+# WAVE - Oni
 A NeoVim personalized development evironment with a ronin aesthetic.
 
 
@@ -11,7 +11,7 @@ A NeoVim personalized development evironment with a ronin aesthetic.
 ## Installation
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/josephbharrison/oni/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/joedefa01/wave/HEAD/install.sh)"
 ```
 ![installer][installer]
 

@@ -115,3 +115,7 @@ vim.filetype.add({
         ["Chart.lock"] = "yaml",
     }
 })
+vim.opt.title = true
+vim.opt.titlelen = 0 -- do not shorten title
+vim.opt.titlestring = 'nvim %{expand("%:p")}'
+vim.cmd.colorscheme("xcodedarkhc")

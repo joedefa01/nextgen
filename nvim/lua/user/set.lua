@@ -20,4 +20,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "85"
 vim.opt.clipboard = "unnamed"
+vim.opt.title = true
+vim.opt.titlelen = 0 -- do not shorten title
+vim.opt.titlestring = 'nvim title'
 -- vim.opt.mousemodel = "extend"
