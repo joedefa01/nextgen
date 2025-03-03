@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/josephbharrison/oni/main/images/logo-small.png"/>
+<img src="https://raw.githubusercontent.com/joedefa01/wave/main/images/logo-small-stng.png"/>
 </p>
 
 # WAVE - Oni
