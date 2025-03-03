@@ -2,8 +2,8 @@
 <img src="https://raw.githubusercontent.com/joedefa01/wave/main/images/logo-small-stng.png"/>
 </p>
 
-# WAVE - Oni
-A NeoVim personalized development evironment with a ronin aesthetic.
+# WAVE -(FORKED) Oni
+A NeoVim personalized development evironment with a LCARS aesthetic.
 
 
 ![desktop][desktop]
