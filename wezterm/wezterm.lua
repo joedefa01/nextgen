@@ -131,8 +131,7 @@ return {
         {
             source = { File = wezterm.config_dir .. "/background2.png" },
             vertical_offset = "-1cell",
-            opacity = 0.75,
-            hsb = { brightness = 0.020, hue = 1.00, saturation = 0.33 },
+            hsb = { brightness = 0.030, hue = 1.00, saturation = 0.33 },
         },
         {
             source = { File = wezterm.config_dir .. "/purple_tile.png" },
