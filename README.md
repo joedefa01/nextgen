@@ -11,7 +11,7 @@ A NeoVim personalized development evironment with a LCARS aesthetic.
 ## Installation
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/joedefa01/wave/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/joedefa01/nextgen/HEAD/install.sh)"
 ```
 ![installer][installer]
 
