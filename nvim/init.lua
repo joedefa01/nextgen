@@ -20,6 +20,7 @@ require("core.mappings")
 
 -- Install plugins
 local plugins = require("plugins")
+
 require("lazy").setup(plugins)
 
 -- Load user preferences
@@ -118,4 +119,4 @@ vim.filetype.add({
 vim.opt.title = true
 vim.opt.titlelen = 0 -- do not shorten title
 vim.opt.titlestring = 'nvim %{expand("%:p")}'
-vim.cmd.colorscheme("xcodedarkhc")
+vim.cmd.colorscheme("arctic")

@@ -32,7 +32,9 @@ local commands = {
     ["xcodedarkhc"] = { "<cmd>colorscheme xcodedarkhc<cr>", desc = "darkhc" },
     ["xcodelight"] = { "<cmd>colorscheme xcodelight<cr>", desc = "light" },
     ["xcodelighthc"] = { "<cmd>colorscheme xcodelighthc<cr>", desc = "lighthc" },
-    ["xcodewwdc"] = { "<cmd>colorscheme xcodewwdc<cr>", desc = "wwdc" }
+    ["xcodewwdc"] = { "<cmd>colorscheme xcodewwdc<cr>", desc = "wwdc" },
+    ["lush"] = { "<cmd>colorscheme lush<cr>", desc = "lush" },
+    ["arctic"] = { "<cmd>colorscheme arctic<cr>", desc = "arctic" }
 }
 
 -- leader mappings
@@ -65,6 +67,8 @@ local mappings = {
     ["<leader>sxl"] = commands.xcodelight,
     ["<leader>sxL"] = commands.xcodelighthc,
     ["<leader>sxw"] = commands.xcodewwdc,
+    ["<leader>sl"] = commands.lush,
+    ["<leader>ss"] = commands.arctic,
 }
 
 -- map keys

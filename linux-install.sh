@@ -88,6 +88,10 @@ function install_tmux(){
     brewster tmux
 }
 
+function install_kitty(){
+    brewster kitty
+}
+
 # pass installer
 function install_pass(){
     brewster pass

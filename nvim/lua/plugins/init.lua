@@ -2,6 +2,7 @@ local modules = {
     -- "aerial", -- prefer symbol-outline
     "ale",
     "alpha",
+    "arctic",
     "astrotheme",
     "base16",
     "better-escape",
@@ -13,6 +14,7 @@ local modules = {
     "colorschemes",
     "comment",
     "conform",
+    "codewindow",
     -- "copilot",
     "docs-view",
     "dressing",
@@ -25,6 +27,7 @@ local modules = {
     "indent-blankline",
     "lspkind",
     "lspconfig",
+    "lush",
     "mason",
     -- "magma",
     "neo-tree",
