@@ -97,6 +97,12 @@ function install_pass(){
     brewster pass
 }
 
+# iTerm2
+function install_iterm2(){
+    brewster iterm2
+}
+
+
 # tldr installer
 function install_tldr(){
     brewster tealdeer tldr

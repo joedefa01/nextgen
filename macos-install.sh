@@ -198,6 +198,11 @@ function install_neovim(){
     brewster nvim neovim
 }
 
+# iTerm2
+function install_iterm2(){
+    brewster iterm2
+}
+
 # pip installer
 function install_pip(){
     pipster pip pip
