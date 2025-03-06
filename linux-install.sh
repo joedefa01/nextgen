@@ -145,6 +145,13 @@ function install_neovim(){
     brewster nvim neovim
 }
 
+# power level 10k
+function install_p10k() {
+    brew install powerlevel10k
+    # copy this once installed 
+    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+}
+
 # Install language servers for neovim
 # Necessary on linux
 function install_lsp(){

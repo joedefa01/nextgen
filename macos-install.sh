@@ -107,6 +107,15 @@ function install_rust(){
     return 0
 }
 
+# power level 10k
+function install_p10k() {
+    brew install powerlevel10k
+    # copy this once installed 
+    echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+    # copy the configuration for p10k
+    echo "source ~/p10k/.p10k.zsh" >>~/.p10k.zsh
+}
+
 # shell tools installer
 function install_cli_tools(){
     brewster gnu-sed sed
@@ -241,6 +250,11 @@ function install_plotly(){
 # kaleido installer
 function install_kaleido(){
     pipster kaleido
+}
+
+# Configure P10k
+function configure_p10k() {
+    
 }
 
 # Configure Oni
