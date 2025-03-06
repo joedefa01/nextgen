@@ -86,7 +86,7 @@ Update the _user_ configuration file: `~/.config/nvim/lua/user/init.lua`
 
 [logo]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/logo.png
 [logo-small]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/logo-small.png
-[desktop]: https://raw.githubusercontent.com/joedefa101/nextgen/main/images/desktop.png
+[desktop]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/desktop.png
 [desktop2]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/desktop2.png
 [screen]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/screen.png
 [mappings]: https://raw.githubusercontent.com/joedefa01/nextgen/main/images/mappings.png
