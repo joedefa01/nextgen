@@ -106,15 +106,31 @@ function install_rust(){
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y &> /dev/null || return 1
     return 0
 }
+####
+# # # # Additional installs
+######
 
 # power level 10k
 function install_p10k() {
     brew install powerlevel10k
-    # copy this once installed 
+    # copy this once installed
     echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
     # copy the configuration for p10k
     echo "source ~/p10k/.p10k.zsh" >>~/.p10k.zsh
 }
+
+function install_atuin () {
+    brew install atuin
+}
+
+# iterm2
+function install_iterm2() {
+    brew install iterm2
+}
+
+###########
+####
+##########
 
 # shell tools installer
 function install_cli_tools(){
@@ -144,11 +160,6 @@ function install_starship(){
 # tmux installer
 function install_tmux(){
     brewster tmux
-}
-
-# Kitty installer
-function install_kitty (){
-    brewster kitty
 }
 
 # pass installer
@@ -207,11 +218,6 @@ function install_neovim(){
     brewster nvim neovim
 }
 
-# iTerm2
-function install_iterm2(){
-    brewster iterm2
-}
-
 # pip installer
 function install_pip(){
     pipster pip pip
@@ -254,7 +260,7 @@ function install_kaleido(){
 
 # Configure P10k
 function configure_p10k() {
-    
+
 }
 
 # Configure Oni
